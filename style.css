@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 13px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+  background: #ecf2f8;
+}
+
+body main {
+  max-width: 90%;
+  margin: 2.5rem auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2rem;
+}
+
+body main #one {
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-position-x: 80%;
+}
+
+body main section {
+  background: #7541c8;
+  border-radius: 0.5rem;
+}
+
+body main section:nth-of-type(2) {
+  background: #48556a;
+}
+
+body main section:nth-of-type(3) {
+  background: white;
+  -webkit-box-shadow: 6px 12px 48px -19px rgba(0, 0, 0, 0.55);
+          box-shadow: 6px 12px 48px -19px rgba(0, 0, 0, 0.55);
+}
+
+body main section:nth-of-type(4) {
+  background: #19212e;
+}
+
+body main section:nth-of-type(5) {
+  background: white;
+  -webkit-box-shadow: 6px 12px 48px -19px rgba(0, 0, 0, 0.55);
+          box-shadow: 6px 12px 48px -19px rgba(0, 0, 0, 0.55);
+}
+
+body main section .container {
+  padding: 2rem;
+}
+
+body main section .container .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+body main section .container .profile .image img {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  -webkit-box-shadow: #cfcfcf;
+          box-shadow: #cfcfcf;
+}
+
+body main section .container .profile .name {
+  color: white;
+}
+
+body main section .container .profile .name h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+body main section .container .profile .name p {
+  font-size: 0.85rem;
+  opacity: 50%;
+}
+
+body main section .container .profile .name .black {
+  color: #19212e;
+}
+
+body main section h1 {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+body main section p {
+  color: white;
+  opacity: 70%;
+}
+
+body main section .black {
+  color: #19212e;
+}
+
+@media only screen and (min-width: 600px) {
+  body main {
+    max-width: 65%;
+    margin: 8rem auto;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+        grid-template-areas: "one one two five" "three four four five";
+  }
+  body main #one {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: one;
+    background-position-x: 80%;
+  }
+  body main #two {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: two;
+  }
+  body main #three {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: three;
+  }
+  body main #four {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-area: four;
+  }
+  body main #five {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 4;
+    grid-area: five;
+  }
+}
+/*# sourceMappingURL=style.css.map */
